@@ -117,6 +117,8 @@ class Pixel:
         self.Vertices = gp.createPixel(_x, _y, d=24.3, rotation=rotation)
         # Create TGraph out of it
 
+        self.area = gp.computePolygonArea(self.Vertices[0], self.Vertices[1])
+
         def __str__(self):
 
             string = ''
@@ -187,6 +189,9 @@ class Patch():
         # Create the list of vertices representing the patch
         self.Vertices = gp.createPatch(_vertices)
 
+        self.area = gp.computePolygonArea(self.Vertices[0], self.Vertices[1])
+
+
     def appendPixel(self, idx, pix):
         """
         A function to append the pixels to the patch
@@ -254,6 +259,8 @@ class Cluster():
 
         return string
 
+    self.area = gp.computePolygonArea(self.Vertices[0], self.Vertices[1])
+
 
 class Module():
     """
@@ -303,6 +310,9 @@ class Module():
         self.fadc = self.pixels[0].fadc
 
         self.Vertices = gp.createModule([p.Vertices for p in self.pixels])
+
+        self.area = gp.computePolygonArea(self.Vertices[0], self.Vertices[1])
+
 
     def appendPixel(self, idx, pix):
         """
