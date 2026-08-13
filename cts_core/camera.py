@@ -259,7 +259,6 @@ class Cluster():
 
         return string
 
-    self.area = gp.computePolygonArea(self.Vertices[0], self.Vertices[1])
 
 
 class Module():
