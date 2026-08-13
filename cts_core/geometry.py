@@ -146,3 +146,24 @@ def createPatches(pixels, pixelsList):
     for pixes in pixelsList:
         patches.append(createPatch([pixels[p] for p in pixes]))
     return patches
+
+def computePolygonArea(x, y):
+    """
+    See Shoelace formula : https://en.wikipedia.org/wiki/Shoelace_formula
+    Parameters
+    ----------
+    x : x coordinates of the vertices
+    y : y coordinates of the vertices
+
+    Returns
+    -------
+    area : area of the polygon
+    """
+
+    if len(x) != len(y):
+        raise ValueError(f"Input arrays must be of equal length {len(x)} != {len(y)}")
+
+    area = np.sum(x[:-1] * y[1:] - x[1:] * y[:-1])
+    area +=  x[-1] * y[0] - x[0] * y[-1]
+
+    return np.abs(area) / 2
