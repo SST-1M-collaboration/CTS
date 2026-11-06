@@ -2,7 +2,7 @@ import sys
 import numpy as np
 
 if sys.version_info[0] == 3:
-    import cts_core.geometry as gp
+    import sst1m_cts_core.geometry as gp
 else:
     import geometry as gp
 

@@ -8,8 +8,8 @@ from opcua import ua, uamethod, Server
 import numpy as np
 import json
 
-import cts_core.cameratestsetup as camtestsetup
-import cts_can.cts_can as com
+import sst1m_cts_core.cameratestsetup as camtestsetup
+import sst1m_cts_can.cts_can as com
 
 
 try:

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import RegularPolygon
 from matplotlib.collections import PatchCollection
-from cts_core.camera import Camera
+from sst1m_cts_core.camera import Camera
 
 
 class LED(object):
