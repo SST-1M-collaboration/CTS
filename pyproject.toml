@@ -10,7 +10,9 @@ version = "1.0.0"
 description = "Control system and camera configuration of the CTS (Camera Test Setup) of the SST-1M camera (DigiCam)"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
+  { name = "Victor Coco", email = "victor.coco@unige.ch"}
   { name = "Yves Renier", email = "yves.renier@unige.ch" },
+  { name = "Cyril Alispach", email= "cyril.alispach@unige.ch"},
   { name = "SST-1M collaboration" },
 ]
 license = { text = "GPL" }
