@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >= 64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# PyPI name sst1m-cts ("cts" is too generic); the import packages are still cts_core,
+# cts_can and cts_opcua
+name = "sst1m-cts"
+version = "1.0.0"
+description = "Control system and camera configuration of the CTS (Camera Test Setup) of the SST-1M camera (DigiCam)"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+  { name = "Yves Renier", email = "yves.renier@unige.ch" },
+  { name = "SST-1M collaboration" },
+]
+license = { text = "GPL" }
+requires-python = ">=3.10"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License (GPL)",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+# hardware control of the CTS: CAN bus and OPC UA server
+can = ["python-can"]
+opcua = ["opcua"]
+
+[project.urls]
+Repository = "https://github.com/SST-1M-collaboration/CTS"
+
+[tool.setuptools]
+packages = ["cts_core", "cts_can", "cts_opcua"]
