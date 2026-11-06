@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 # PyPI name sst1m-cts ("cts" is too generic); the import packages are still cts_core,
 # cts_can and cts_opcua
 name = "sst1m-cts"
-version = "1.0.3"
+version = "1.0.0"
 description = "Control system and camera configuration of the CTS (Camera Test Setup) of the SST-1M camera (DigiCam)"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
