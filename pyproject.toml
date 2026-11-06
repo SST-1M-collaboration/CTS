@@ -3,8 +3,8 @@ requires = ["setuptools >= 64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-# PyPI name sst1m-cts ("cts" is too generic); the import packages are still cts_core,
-# cts_can and cts_opcua
+# PyPI name sst1m-cts ("cts" is too generic), import packages sst1m_cts_core, sst1m_cts_can
+# and sst1m_cts_opcua
 name = "sst1m-cts"
 version = "1.0.0"
 description = "Control system and camera configuration of the CTS (Camera Test Setup) of the SST-1M camera (DigiCam)"
@@ -33,4 +33,4 @@ opcua = ["opcua"]
 Repository = "https://github.com/SST-1M-collaboration/CTS"
 
 [tool.setuptools]
-packages = ["cts_core", "cts_can", "cts_opcua"]
+packages = ["sst1m_cts_core", "sst1m_cts_can", "sst1m_cts_opcua"]

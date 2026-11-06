@@ -52,7 +52,7 @@ $ source activate ctapipe
 ```
 
 ```
-(ctapipe) $ python cts_opcua/cts_opcua_server.py angle
+(ctapipe) $ python sst1m_cts_opcua/cts_opcua_server.py angle
 
 ```
 
@@ -60,7 +60,7 @@ where angle can be 0, 120 or 240.
 
 As soon as `WARNING:opcua.server.binary_server_asyncio:Listening on 0.0.0.0:4843` is shown, you can control the CTS with any OpcUa client which is compatible with methods.
 
-The structure of the OpcUa server is discribed in [cts_opcua/README.md](cts_opcua/README.md) 
+The structure of the OpcUa server is discribed in [sst1m_cts_opcua/README.md](sst1m_cts_opcua/README.md) 
 
 ## CTS ACS component
 Once the OpcUa server is running, an ICS interface is available as well.

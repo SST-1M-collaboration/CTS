@@ -2,8 +2,8 @@ import numpy as np
 import sys
 
 if sys.version_info[0] == 3:
-    import cts_core.geometry as gp
-    import cts_core.camera as camera
+    import sst1m_cts_core.geometry as gp
+    import sst1m_cts_core.camera as camera
 else:
     import geometry as gp
     import camera as camera
